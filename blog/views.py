@@ -2,11 +2,17 @@
 
 from django.http import HttpResponse, Http404
 from django.shortcuts import redirect
+from django.shortcuts import render
+from datetime import datetime
 
 def home(request):
   text="""<h1>hello world</h1>
 <p>la première phrase de mon site.</p>"""
   return HttpResponse(text)
+
+def tpl(request):
+  return render(request, 'blog/tpl.html',{'current_date':
+datetime.now()})
 
 def view_article(request, id_article):
   """ Vue qui affiche un article selon son identifiant 
