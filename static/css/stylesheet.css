@@ -1,0 +1,550 @@
+/* ####################### BASICS ####################### */
+
+html, body
+{
+}
+
+#container
+{
+	position: absolute;
+	margin: 0 0 0 -490px;
+	padding: 0;
+	left: 50%;
+	width: 980px;
+	height: 100%;
+	font-family: Georgia, Times New Roman, Times, serif;
+}
+
+
+#back
+{
+    background: none repeat scroll 0 0 #E1E8E5;
+    height: 400px;
+    left: 0;
+    position: fixed;
+    top: 167px;
+    width: 100%;
+    z-index: -2;
+}
+
+.borderline
+{
+	margin: 0;
+	padding: 0;
+	width: 70px;
+	height: 160px;
+}
+
+
+.clear
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+}
+
+/* ####################### HEADER ####################### */
+
+#header
+{
+	margin: 0 0 0 30px;
+	padding: 0;
+	width: 910px;
+	height: 210px;
+}
+
+#header #header_l
+{
+	float: left;
+	margin: 0 0 0 10px;
+	padding: 70px 0 0 0;
+	width: 570px;
+	height: 210px;
+}
+
+#header #header_l h2
+
+{
+	height: 35px;
+	font: 25px Arial, Helvetica, sans-serif;
+}
+
+#header #header_l h2 a
+{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#header #header_l h2 a:hover, #header #header_l h2 a#current
+{
+	color: #6E2F4E;
+}
+
+#header #header_r
+{
+	float: right;
+	margin: 0 10px 0 0;
+	padding: 0;
+	width: 320px;
+	height: 210px;
+}
+
+#header #header_r img
+{
+	border: 0; 
+        float: right;
+        width: 216px;
+}
+
+
+/* ####################### SUBHEADER ####################### */
+
+#sub_header
+{
+	margin: 0 0 0 30px;
+	padding: 0;
+	width: 910px;
+	height: auto;
+}
+
+/* ####################### SUBHEADER [NAVIGATION] ####################### */
+
+#sub_header #navigation
+{
+	float: left;
+	margin: 70px 0 0 10px;
+	padding: 0;
+	width: 320px;
+	height: auto;
+	background: none;
+}
+
+#sub_header #navigation a
+{
+	font: 58px/67px Arial, Helvetica, sans-serif;
+	/*font: 58px/67px Georgia, Times New Roman, Times, serif;*/
+	text-decoration: none;
+	color: skyblue;
+}
+
+#sub_header #navigation a:hover
+{
+
+	color: #6E2F4E;
+}
+
+/* ####################### SUBHEADER [BUBBLE] ####################### */
+
+#sub_header #block 
+{
+	float: right;
+	margin: 50px 10px 0 0;
+	padding: 40px 40px 30px 40px;
+	width: 490px;
+	height: auto;
+	background: url(../img/color-black-10-percent-trans.png) transparent;
+}
+
+
+
+#sub_header #triangle
+{
+	float: right;
+	margin: 0 10px 15px 0;
+	padding: 0;
+	width: 570px;
+	height: 10px;
+	background: url(../img/color-black-10-percent-triangle-trans.png) no-repeat transparent 500px top;
+}
+
+/* ####################### HORIZONTAL LINE ####################### */
+
+.hr
+{
+	margin: 0 0 0 40px;
+	padding: 0;
+	width: 890px;
+	height: 50px;
+}
+
+.hr .line
+{
+	position: absolute;
+	display: inline;
+	float: right;
+	margin: 2px 0 0 10px;
+	padding: 0 0 5px 0;
+	border-bottom: 1px solid #6E2F4E;
+	font-size: 12px;
+	text-align: right;
+	color: #6E2F4E;
+}
+
+.hr .line a
+{
+	font-size: 12px;
+	color: #6E2F4E;
+	text-decoration: none;
+}
+
+.hr .line a:hover
+{
+	color: #FFF;
+}
+
+.hr #line_work
+{
+	width: 748px;
+}
+
+.hr #line_about
+{
+	width: 729px;
+}
+
+.hr #line_contact
+{
+	width: 693px;
+}
+.inner_copyright{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+
+/* ####################### HEADLINES & PARAGRAPHS ####################### */
+
+h1
+{
+	margin: -10px 0 0 0;
+	padding: 0;
+	font: 27px Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+h2
+{
+	margin: 5px 0 0 0;
+	padding: 0;
+	font: 58px Georgia, Times New Roman, Times, serif;
+	color: #000;
+}
+
+h3
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	font: 20px/20px Georgia, Times New Roman, Times, serif;
+	color: #6E2F4E;
+}
+
+h4
+{
+	margin: 0 0 20px 0;
+	padding: 0;
+	width: auto;
+	font: italic 27px/20px Georgia, Times New Roman, Times, serif;
+	color: #000;
+}
+
+h3 .top
+{
+	margin: 0 0 0 10px;
+	vertical-align: top;
+	font-style: italic;
+}
+
+h3 .bold
+{
+	margin: 0;
+	padding: 0;
+	font: bold italic 30px Georgia, Times New Roman, Times, serif;
+}
+
+p
+{
+	font: 14px/24px Georgia, Times New Roman, Times, serif;
+	color: #000;
+}
+
+p a.link
+{
+	margin: 0;
+	padding: 0 3px 0 3px;
+	font: bold italic 12px Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+p a.link:hover
+{
+	color: #6E2F4E;
+}
+
+p.meta
+{
+	font-size: 12px;
+	font-style: italic;
+	color: #6E2F4E;
+}
+
+/* ####################### PARAGRAPH CONTACT ####################### */
+
+p .position
+{
+	float: right;
+}
+
+p a.mail
+{
+	margin: 0;
+	padding: 0 0 0 30px;
+	font: 14px/24px Georgia, Times New Roman, Times, serif;
+	color: #000;
+	background: url(../img/mail.gif) no-repeat left bottom;
+}
+
+p a:hover.mail
+{
+	color: #6E2F4E;
+	background: url(../img/mail_hover.gif) no-repeat left bottom;
+}
+
+/* ####################### COLUMNS ####################### */
+
+.columns
+{
+	margin: 70px 0 0 11px;
+	padding: 0;
+	width: 960px;
+	height: auto;
+}
+
+.columns .unit
+{
+	float: left;
+	margin: 0 30px 50px 30px;
+	padding: 0;
+	width: 260px;
+	height: auto;
+}
+
+.columns .unit_20
+{
+	float: left;
+	margin: -15px 30px 50px 30px;
+	padding: 0;
+	width: 260px;
+	height: auto;
+}
+
+.columns .thumb
+{
+	margin: 0;
+	padding: 5px;
+	width: 250px;
+	height: auto;
+	background: url(../img/thumb_background.gif) no-repeat transparent;
+}
+
+.columns .thumb .new
+{
+	position: absolute; 
+	margin: 10px 0 0 -15px;
+	width: 48px;
+	height: 39px;
+	background: url(../img/thumb_new.gif) no-repeat transparent;
+}
+
+.columns .unit .image_container
+{
+	margin: -20px 0 100px 0;
+	padding: 5px;
+	width: 570px; 
+	height: 420px; 
+	background: url(../img/image_background.jpg) no-repeat transparent;
+}
+
+.columns p
+{
+	margin: 10px 0 30px 0;
+	padding: 0;
+	width: 250px;
+}
+
+.columns a
+{
+	margin: 0 0 0 5px;
+	font: italic 11px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #6E2F4E;
+}
+
+.columns a:hover
+{
+	color: #FFF;
+}
+
+.columns .thumb img
+{
+	margin: 0 0 0 -5px;
+	padding: 0;
+	border: 0;
+}
+
+/* ####################### FORM ####################### */
+
+label
+{
+	display: block;
+	margin: 0;
+	padding: 0 0 15px 10px;
+	font: bold italic 12px Georgia, Times New Roman, Times, serif;
+	color: #6E2F4E;
+}
+
+label input
+{
+	margin: 15px 0 10px -10px;
+	padding: 0 10px 10px 10px;
+	width: 230px;
+	border: 0;
+	background: url(../img/input.gif) no-repeat transparent left 15px;
+	font: 11px/22px Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+
+input.submit
+{
+	margin: -2px 10px 0 0;
+	padding: 2px 10px 15px 12px;
+	width: 250px;
+	height: 50px;
+	border: 0;
+	text-align: left;
+	font: bold italic 12px Georgia, Times New Roman, Times, serif;
+	color: #6E2F4E;
+	background: url(../img/send.png) no-repeat transparent;
+}
+
+input.submit:hover
+{
+	background: url(../img/send_hover.png) no-repeat transparent;
+}
+
+label textarea.expanding
+{
+	margin: 15px 0 0 -10px;
+	padding: 0 10px 18px 10px;
+	width: 230px;
+	height: 100px; 
+	min-height: 100px;
+	border: 0;
+	background: url(../img/input.gif) no-repeat transparent left 18px;
+	font: 11px/22px Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+
+/* ####################### FOOTER ####################### */
+
+#footer
+{
+	margin: 100px 10px 0 40px;
+	padding: 0 0 100px 0;
+	width: 890px;
+	height: 15px;
+	font: 11px Georgia, Times New Roman, Times, serif;
+	color: #6E2F4E;
+}
+
+#footer #footer_1
+{
+	float: left;
+	margin: 3px 0;
+}
+
+#footer #footer_2
+{
+	float: left;
+	margin: 3px 80px;
+}
+
+#footer #footer_r
+{
+	float: right;
+	vertical-align: top;
+}
+
+#footer #footer_r img
+{
+	margin-top: -6px;
+	vertical-align: text-top;
+	width:70px
+}
+
+#footer #footer_labo
+{
+	    color: #6E2F4E;
+    text-decoration: none;
+}
+
+
+/* ####################### EASY SLIDER ####################### */
+#slider
+{
+	
+}
+
+#slider ul, #slider li
+{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+#slider li
+{
+	overflow: hidden; 
+	width: 560px;
+	height: 410px;
+}	
+
+.graphic, #prevBtn, #nextBtn
+{
+	margin: 0;
+	padding: 0;
+	display: block;
+	overflow: hidden;
+	text-indent: -8000px;
+	border: 0;
+}
+
+#prevBtn, #nextBtn
+{
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 38px;
+}
+
+#prevBtn
+{
+	margin: -40px 0 0 -20px;
+}
+
+#nextBtn
+{
+	margin: -40px 0 0 522px;
+}
+
+#prevBtn a, #nextBtn a
+{  
+	display: block;
+	width: 48px;
+	height: 39px;
+	background:url(../img/b_prev.gif) no-repeat;	
+}
+
+#nextBtn a
+{ 
+	background:url(../img/b_next.gif) no-repeat;	
+}
