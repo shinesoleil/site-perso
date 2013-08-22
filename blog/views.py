@@ -22,7 +22,7 @@ password=password)
         login(request, user) # nous connectons l'utilisateur
       else: 
         error = True
-      return render(request, 'blog/logged.html',locals())
+      return render(request, 'blog/connexion.html',locals())
   else:
     form = ConnexionForm()
     return render(request, 'blog/connexion.html',locals())

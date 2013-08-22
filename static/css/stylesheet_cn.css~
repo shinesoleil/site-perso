@@ -37,11 +37,6 @@ html, body
     z-index: -2;
 }
 
-#log
-{
-	font-size: 20px;
-	}
-
 .borderline
 {
 	margin: 0;

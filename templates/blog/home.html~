@@ -1,26 +1,24 @@
 {%load static%}
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="author" content="hao" />
 	<meta name="robots" content="index, follow" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<title>XHTML Template "Anticipated" from www.cssmoban.com</title>
+	<title>home Hao Pan</title>
 	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/stylesheet_cn.css'%} " />
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 	<!--[if lt IE 7]>
 	<script type="text/javascript" src="js/IE7.js"></script>
 	<![endif]-->
 	<script type="text/javascript" src="{%static '/js/jquery-1.3.2.min.js'%}"></script>
-	<script type="text/javascript" src="js/jquery.anchor.js"></script>
-	<script type="text/javascript" src="js/jquery.autogrow.js"></script>
-	<script type="text/javascript" src="js/root_sifr.lite.js"></script>
+	<script type="text/javascript" src="{%static 'js/jquery.anchor.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/jquery.autogrow.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/root_sifr.lite.js'%}"></script>
 
 	<script type="text/javascript">
-
-	
 
 	</script>
 </head>
@@ -40,7 +38,7 @@
 			</div><!-- #header_l -->
 
 			<div id="header_r">
-				<a href="index.html#top"><img src="img/logo-trans.png" alt="Anticipated - Portfolio Design" /></a>
+				<a href="index.html#top"><img src="{%static 'img/logo-trans.png'%}" alt="Anticipated - Portfolio Design" /></a>
 			</div><!-- #header_r -->
 
 		</div><!-- #header -->
@@ -94,20 +92,20 @@
 			<div class="unit">
 				<h1>我<strong>来自</strong> <br /></h1>
 				<p>我来自中国西安，世界四大古都之一。<br/>大学就读于西安电子科技大学微电子系。</p>
-				<img class="image" src="img/construction.jpg" alt="en construction" />
+				<img class="image" src="{%static 'img/construction.jpg'%}" alt="en construction" />
 			</div><!-- #unit -->
 
 			<div class="unit">
 				<h1>我<strong>现在</strong><br /></h1>
 				<p>我现在住在法国斯特拉斯堡，德法边境。就读于法国国立高等企业信息工程师学院。</p>
-				<img class="image" src="img/construction.jpg" alt="en construction" />
+				<img class="image" src="{%static 'img/construction.jpg'%}" alt="en construction" />
 			</div><!-- #unit -->
 
 			<div class="unit">
 				<h1>我<strong>未来</strong><br /></h1>
 				<p>我将来在哪里？也许你能给我答案。<br/><a href="#contact">@联系我</a></p>
 				
-				<img class="image" src="img/construction.jpg" alt="en construction" />
+				<img class="image" src="{%static 'img/construction.jpg'%}" alt="en construction" />
 			</div><!-- #unit -->
 
 		</div><!-- #columns -->
@@ -133,7 +131,7 @@
 				<p>Weit hinten, hinter den Wortbergen, fern der Laender Vokalien leben die eloquenten Blindtexte. <a href="work/example_1/index.html">Details</a></p>
 				<div class="thumb">
 					<!-- ### ADD THIS FOR A "NEW" ICON! ### --><div class="new">&nbsp;</div>
-					<a href="work/example_1/index.html"><img src="img/construction.jpg" alt="Example 1" /></a>
+					<a href="work/example_1/index.html"><img src="{%static 'img/construction.jpg'%}" alt="Example 1" /></a>
 				</div><!-- thumb -->
 			</div><!-- #unit -->
 
@@ -141,7 +139,7 @@
 				<h1>我的<strong>实习经历</strong></h1>
 				<p>Weit hinten, hinter den Wortbergen, fern der Laender Vokalien leben die eloquenten Blindtexte. <a href="work/example_1/index.html">Details</a></p>
 				<div class="thumb">
-					<a href="work/example_1/index.html"><img src="img/construction.jpg" alt="Example 2" /></a>
+					<a href="work/example_1/index.html"><img src="{%static 'img/construction.jpg'%}" alt="Example 2" /></a>
 				</div><!-- thumb -->
 			</div><!-- #unit -->
 
@@ -149,7 +147,7 @@
 				<h1>我的<strong>业余兴趣</strong></h1>
 				<p>Weit hinten, hinter den Wortbergen, fern der Laender Vokalien leben die eloquenten Blindtexte. <a href="work/example_1/index.html">Details</a></p>
 				<div class="thumb">
-					<a href="work/example_1/index.html"><img src="img/construction.jpg" alt="Example 3" /></a>
+					<a href="work/example_1/index.html"><img src="{%static 'img/construction.jpg'%}" alt="Example 3" /></a>
 				</div><!-- thumb -->
 			</div><!-- #unit -->
 
@@ -175,21 +173,21 @@
 			<div class="unit">
 				<h1>我的<strong>爱好</strong> <br /></h1>
 				<p>我喜欢网球，踢踏舞。<br/>我也着迷于语言，掌握英语，法语，正在学习德语。</p>
-				<img class="image" src="img/construction.jpg" alt="en construction" />
+				<img class="image" src="{%static 'img/construction.jpg'%}" alt="en construction" />
 			</div><!-- #unit -->
 
 			<div class="unit">
 				<h1>我的<strong>活动</strong><br /></h1>
 				<p>我是<a href="http://www.jeunes-ambassadeurs-alsace.com/">
 				阿尔萨斯青年外交官俱乐部</a>的一员。我也加入了斯特拉斯堡Meinau网球俱乐部。</p>
-				<img class="image" src="img/construction.jpg" alt="en construction" />
+				<img class="image" src="{%static 'img/construction.jpg'%}" alt="en construction" />
 			</div><!-- #unit -->
 
 			<div class="unit">
 				<h1>致<strong>朋友</strong><br /></h1>
 				<p>所有愿意分享的，都在这里<br/></p>
 				
-				<img class="image" src="img/construction.jpg" alt="en construction" />
+				<img class="image" src="{%static 'img/construction.jpg'%}" alt="en construction" />
 			</div><!-- #unit -->
 
 		</div><!-- #columns -->
@@ -226,9 +224,9 @@
 				
 					Email <span class="position">soleilpan@gmail.com</span>
 				</p>
-				<a href="https://www.facebook.com/hao.pan.37"><image src="img/social_network/facebook.gif"></image></a>
-				<a href="http://www.renren.com/252201293"><image src="img/social_network/renren.gif"></image></a>
-				<a href="http://www.weibo.com/u/1843677512?wvr=5&"><image src="img/social_network/weibo.gif"></image></a>
+				<a href="https://www.facebook.com/hao.pan.37"><image src="{%static 'img/social_network/facebook.gif'%}"></image></a>
+				<a href="http://www.renren.com/252201293"><image src="{%static 'img/social_network/renren.gif'%}"></image></a>
+				<a href="http://www.weibo.com/u/1843677512?wvr=5&"><image src="{%static 'img/social_network/weibo.gif'%}"></image></a>
 			</div><!-- #unit -->
 
 			<div class="unit">
@@ -266,7 +264,7 @@
 			</div><!-- #footer_l -->
 			
 			<div id="footer_r"><a id="footer_labo" href="https://www.djangoproject.com/">
-			<img src="img/django.gif"></img>
+			<img src="{%static 'img/django.gif'%}"></img>
 			site built in Django
 			</a>
 		    </div><!-- #footer_r -->

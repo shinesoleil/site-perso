@@ -47,9 +47,8 @@
         <div id="back1"></div>
 		
 		<div id="header">
-
+    <h1>欢迎登陆<br />{{user.username}}</h1>
 			<div id="header_l">
-
 				<h2>
 					<a href="../../index.html#about">About </a>
 					<a href="#top">Work </a>
@@ -69,8 +68,7 @@
 		<div class="columns">
 
 			<div class="unit">
-				<h1>This is a headline <br />without any sense</h1>
-				<p>欢迎登陆{{user.username}}</p>
+				
 				<p class="meta">Responsible for Art Direction, Design and Development. Produced at Max Power, for Anticiptated, LLC.</p>
 			</div><!-- #unit -->
 
