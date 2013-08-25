@@ -16,16 +16,22 @@ def connexion(request):
     if form.is_valid():
       username = form.cleaned_data["username"] 
       password = form.cleaned_data["password"]
-      user = authenticate(username=username,
-password=password) 
-      if user: # Si l'objet renvoyé n'est pas None
+      user = authenticate(username=username,password=password) 
+      if user:
         login(request, user) # nous connectons l'utilisateur
+        return render(request, 'blog/logged.html',locals())
       else: 
         error = True
+        return render(request, 'blog/connexion.html',locals())
+    else: 
+      error = True
       return render(request, 'blog/connexion.html',locals())
   else:
-    form = ConnexionForm()
-    return render(request, 'blog/connexion.html',locals())
+    if request.user.is_authenticated():
+      return render(request, 'blog/logged.html',locals())
+    else:
+      form = ConnexionForm()
+      return render(request, 'blog/connexion.html',locals())
 
 def deconnexion(request):
   logout(request)

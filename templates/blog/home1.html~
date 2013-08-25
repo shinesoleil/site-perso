@@ -11,15 +11,14 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/stylesheet_cn.css'%}" />
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
  
- <link rel="stylesheet" href="{%static 'timecounter/countdown/jquery.countdown.css'%}" />	
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" />
+
+
 	<!--[if lt IE 7]>
 	<script type="text/javascript" src="js/IE7.js"></script>
 	<![endif]-->
-			<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 	
-	<script  src="{% static 'timecounter/countdown/jquery.countdown.js'%}"></script>
-	<script  src="{% static 'timecounter/js/script.js'%}"></script>	
 
 
 	<script type="text/javascript" src="{%static 'js/jquery.anchor.js'%}"></script>
@@ -34,9 +33,10 @@
 
 <body>
 
-		 <div id="container">
+		
+	 <div id="container">
 	
-  
+	
 		<a name="top" id="top"></a>
 
 		<div id="back"></div>
