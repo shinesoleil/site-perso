@@ -7,10 +7,13 @@ from datetime import datetime
 from blog.forms import ContactForm,ConnexionForm
 from django.contrib.auth import authenticate, login, logout
 from django.core.urlresolvers import reverse
+from django.contrib import messages
+
 
 def connexion(request):
   error = False
-  
+  #teste pour la méthode messages
+  messages.add_message(request, messages.INFO, u'Bonjour visiteur !')
   if request.method == "POST":
     form = ConnexionForm(request.POST)
     if form.is_valid():
@@ -56,6 +59,7 @@ def contact(request):
 
 
 def home(request):
+
   text="""<h1>hello world</h1>
 <p>la première phrase de mon site.</p>"""
   return HttpResponse(text)

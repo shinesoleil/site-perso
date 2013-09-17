@@ -1,32 +1,299 @@
 {%load static%}
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>A jQuery Countdown Timer | Tutorialzine Demo</title>
-        
-        <!-- Our CSS stylesheet file -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" />
-        <link rel="stylesheet" href="{%static 'timecounter/css/styles.css'%}" />
-        <link rel="stylesheet" href="{%static 'timecounter/countdown/jquery.countdown.css'%}" />
-        
-        
-        
-        <!-- JavaScript includes -->
-		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-		<script src="{%static 'timecounter/countdown/jquery.countdown.js'%}"></script>
-		<script src="{%static 'timecounter/js/script.js'%}"></script>
-        <!--[if lt IE 9]>
-          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-    </head>
-    
-    <body>
-
-		<div id="countdown"></div>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="hao" />
+	<meta name="robots" content="index, follow" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<title>home Hao Pan</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/stylesheet_cn.css'%}" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+ 
+ <link rel="stylesheet" href="{%static 'timecounter/countdown/jquery.countdown.css'%}" />	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" />
+	<!--[if lt IE 7]>
+	<script type="text/javascript" src="js/IE7.js"></script>
+	<![endif]-->
+			<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	
+	<script  src="{% static 'timecounter/countdown/jquery.countdown.js'%}"></script>
+	<script  src="{% static 'timecounter/js/script.js'%}"></script>	
 
 
+	<script type="text/javascript" src="{%static 'js/jquery.anchor.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/jquery.autogrow.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/root_sifr.lite.js'%}"></script>
 
-    </body>
+
+	<script type="text/javascript">
+
+	</script>
+</head>
+
+<body>
+
+{% if messages %}
+   <ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+   </ul>
+{% endif %}
+
+		 <div id="container">
+		 
+	
+  
+		<a name="top" id="top"></a>
+
+		<div id="back"></div>
+		
+		<div id="header">
+
+			<div id="header_l">
+				&nbsp;
+			</div><!-- #header_l -->
+
+			<div id="header_r">
+				<a href="index.html#top"><img src="{%static 'img/logo-trans.png'%}" alt="Anticipated - Portfolio Design" /></a>
+			</div><!-- #header_r -->
+
+		</div><!-- #header -->
+
+		<div class="clear">&nbsp;</div>
+
+		<div id="sub_header">
+
+			<div id="navigation">
+
+				<h2 id="summary">
+					<a href="#about">关于我 </a><br />
+					<a href="#work">工作 </a>
+					<a href="#life">生活 </a><br />
+					<a href="#contact">联系我</a>
+				</h2>
+
+			</div><!-- #navigation -->
+
+			<div id="block">
+
+				<h1>我的小站 <br /><strong>欢迎</strong></h1>
+
+				<p>
+					你好，我是潘浩。<br/>我是一名计算机工程师学生。 <br/><br/><br/>
+			    </p>
+
+			</div><!-- #block -->
+
+			<div id="triangle">
+				&nbsp;
+			</div><!-- #triangle -->
+
+		</div><!-- #sub_header -->
+
+		<div class="clear">&nbsp;</div>
+
+<!-- ### WORK ### --><a name="about" id="about"></a><div class="borderline">&nbsp;</div>
+
+<div class="hr">
+
+			<h3>一些 <br /><span class="top">关于我</span> <span class="bold">的</span></h3>
+			<div class="line" id="line_about"><a href="#top" class="anchorLink">TOP</a></div><!-- #line -->
+
+		</div><!-- #hr -->
+
+		<div class="clear">&nbsp;</div>
+
+		<div class="columns">
+
+			<div class="unit">
+				<h1>我<strong>来自</strong> <br /></h1>
+				<p>我来自中国西安，世界四大古都之一。<br/>大学就读于西安电子科技大学微电子系。</p>
+				<img class="image" src="{%static 'img/construction.jpg'%}" alt="en construction" />
+			</div><!-- #unit -->
+
+			<div class="unit">
+				<h1>我<strong>现在</strong><br /></h1>
+				<p>我现在住在法国斯特拉斯堡，德法边境。就读于法国国立高等企业信息工程师学院。</p>
+				<img class="image" src="{%static 'img/construction.jpg'%}" alt="en construction" />
+			</div><!-- #unit -->
+
+			<div class="unit">
+				<h1>我<strong>未来</strong><br /></h1>
+				<p>我将来在哪里？也许你能给我答案。<br/><a href="#contact">@联系我</a></p>
+				
+				<img class="image" src="{%static 'img/construction.jpg'%}" alt="en construction" />
+			</div><!-- #unit -->
+
+		</div><!-- #columns -->
+
+		<div class="clear">&nbsp;</div>
+
+<!-- ### CONTACT ### --><a name="work" id="work"></a><div class="borderline">&nbsp;</div>
+
+
+		<div class="hr">
+
+			<h3>看看 <br /><span class="top">我的</span> <span class="bold">工作</span></h3>
+			<div class="line" id="line_work"><a href="#top" class="anchorLink">TOP</a></div><!-- #line -->
+
+		</div><!-- #hr -->
+
+		<div class="clear">&nbsp;</div>
+
+		<div class="columns">
+
+			<div class="unit">
+				<h1>我的<strong>学校课业</strong></h1>
+				<p>Weit hinten, hinter den Wortbergen, fern der Laender Vokalien leben die eloquenten Blindtexte. <a href="work/example_1/index.html">Details</a></p>
+				<div class="thumb">
+					<!-- ### ADD THIS FOR A "NEW" ICON! ### --><div class="new">&nbsp;</div>
+					<a href="work/example_1/index.html"><img src="{%static 'img/construction.jpg'%}" alt="Example 1" /></a>
+				</div><!-- thumb -->
+			</div><!-- #unit -->
+
+			<div class="unit">
+				<h1>我的<strong>实习经历</strong></h1>
+				<p>Weit hinten, hinter den Wortbergen, fern der Laender Vokalien leben die eloquenten Blindtexte. <a href="work/example_1/index.html">Details</a></p>
+				<div class="thumb">
+					<a href="work/example_1/index.html"><img src="{%static 'img/construction.jpg'%}" alt="Example 2" /></a>
+				</div><!-- thumb -->
+			</div><!-- #unit -->
+
+			<div class="unit">
+				<h1>我的<strong>业余兴趣</strong></h1>
+				<p>Weit hinten, hinter den Wortbergen, fern der Laender Vokalien leben die eloquenten Blindtexte. <a href="work/example_1/index.html">Details</a></p>
+				<div class="thumb">
+					<a href="work/example_1/index.html"><img src="{%static 'img/construction.jpg'%}" alt="Example 3" /></a>
+				</div><!-- thumb -->
+			</div><!-- #unit -->
+
+			
+
+		</div><!-- #columns -->
+		<div class="inner_copyright"></div>
+		<div class="clear">&nbsp;</div>
+
+		<!-- ### WORK ### --><a name="life" id="life"></a><div class="borderline">&nbsp;</div>
+
+        <div class="hr">
+
+			<h3>看看 <br /><span class="top">我的</span> <span class="bold">生活</span></h3>
+			<div class="line" id="line_about"><a href="#top" class="anchorLink">TOP</a></div><!-- #line -->
+
+		</div><!-- #hr -->
+
+		<div class="clear">&nbsp;</div>
+
+		<div class="columns">
+
+			<div class="unit">
+				<h1>我的<strong>爱好</strong> <br /></h1>
+				<p>我喜欢网球，踢踏舞。<br/>我也着迷于语言，掌握英语，法语，正在学习德语。</p>
+				<img class="image" src="{%static 'img/construction.jpg'%}" alt="en construction" />
+			</div><!-- #unit -->
+
+			<div class="unit">
+				<h1>我的<strong>活动</strong><br /></h1>
+				<p>我是<a href="http://www.jeunes-ambassadeurs-alsace.com/">
+				阿尔萨斯青年外交官俱乐部</a>的一员。我也加入了斯特拉斯堡Meinau网球俱乐部。</p>
+				<img class="image" src="{%static 'img/construction.jpg'%}" alt="en construction" />
+			</div><!-- #unit -->
+
+			<div class="unit">
+				<h1>致<strong>朋友</strong><br /></h1>
+				<p>所有愿意分享的，都在这里<br/></p>
+				
+				<img class="image" src="{%static 'img/construction.jpg'%}" alt="en construction" />
+			</div><!-- #unit -->
+
+		</div><!-- #columns -->
+
+		<div class="clear">&nbsp;</div>
+		
+<!-- ### ABOUT ### --><a name="contact" id="contact"></a><div class="borderline">&nbsp;</div>
+
+		
+		<div class="hr">
+
+			<h3>试着<br /><span class="top">联系</span> <span class="bold">我吧</span></h3>
+			<div class="line" id="line_contact"><a href="#top" class="anchorLink">TOP</a></div><!-- #line -->
+
+		</div><!-- #hr -->
+
+		<div class="clear">&nbsp;</div>
+
+		<div class="columns">
+
+			<div class="unit">
+				<h4>别再犹豫</h4>
+				<h1>留言给我<br />打电话给我<br />关于一切<br />让我们一起交流吧<br /></h1>
+			</div><!-- #unit -->
+
+			<div class="unit_20">
+				<p>用任何方式留言给我，我会仔细阅读你的每一句话。<br/><p>
+					ENSIIE Strasbourg<br />
+					4, Rue des Fougères<br />
+					Strasbourg, France
+				</p>
+				<p>
+					Mobile <span class="position">+33&nbsp; 6 &ndash; 48&ndash;35&ndash;30&ndash;20</span><br/>
+				
+					Email <span class="position">soleilpan@gmail.com</span>
+				</p>
+				<a href="https://www.facebook.com/hao.pan.37"><image src="{%static 'img/social_network/facebook.gif'%}"></image></a>
+				<a href="http://www.renren.com/252201293"><image src="{%static 'img/social_network/renren.gif'%}"></image></a>
+				<a href="http://www.weibo.com/u/1843677512?wvr=5&"><image src="{%static 'img/social_network/weibo.gif'%}"></image></a>
+			</div><!-- #unit -->
+
+			<div class="unit">
+				<form id="form" method="post" action="">
+					<div>
+						<label>
+							Type in your name
+							<input type="text" name="name" id="name" tabindex="1" />
+						</label>
+						<label>
+							Type in your E-Mail
+							<input type="text" name="email" id="email" tabindex="2" />
+						</label>
+						<label>
+							Free speech!
+							<textarea name="free_text" id="free_text" tabindex="3" rows="6" cols="40" class="expanding">&nbsp;</textarea>
+						</label>
+						<input type="submit" value="Let's talk!" class="submit" />
+					</div>
+				</form>
+			</div><!-- #unit -->
+
+		</div><!-- #columns -->
+
+		<div class="clear">&nbsp;</div>
+
+		<div id="footer">
+
+			<div id="footer_1">
+				Copyright &copy; 2013 by Hao PAN. All rights reserved.
+			</div><!-- #footer_l -->
+
+			<div id="footer_2">
+				<a id="footer_labo" href="../../blog/connexion">试验站入口</a>
+			</div><!-- #footer_l -->
+			
+			<div id="footer_r"><a id="footer_labo" href="https://www.djangoproject.com/">
+			<img src="{%static 'img/django.gif'%}"></img>
+			site built in Django
+			</a>
+		    </div><!-- #footer_r -->
+
+			
+		</div><!-- #footer -->
+
+		<div class="clear">&nbsp;</div>
+
+	</div><!-- #container -->
+
+</body>
 </html>
-
